@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KPSoftwork University</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            main: "#824595",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar"
+    aria-controls="sidebar-multi-level-sidebar" type="button"
+    class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+    <span class="sr-only">Open sidebar</span>
+    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path clip-rule="evenodd" fill-rule="evenodd"
+        d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+      </path>
+    </svg>
+  </button>
+
+  <aside id="sidebar-multi-level-sidebar"
+    class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+    aria-label="Sidebar">
+    <div class="h-full py-4 overflow-y-auto bg-white">
+      <figure class="flex items-center justify-between px-3">
+        <img src="./assets/images/logo.png" alt="logo" class="w-48" />
+        <button data-collapse-toggle="mobile-menu-2" type="button"
+          class="inline-flex items-center mt-3 p-1 ml-1 text-sm text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="mobile-menu-2" aria-expanded="false">
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </figure>
+      <div class="flex justify-between flex-col items-center mt-6 px-3">
+        <img src="./assets/images/badge.png" alt="badge" />
+        <h2 class="font-roboto font-bold text-[22px] text-gray-400">
+          Jhon Aris
+        </h2>
+        <p class="text-center font-bold text-gray text-gray-400 text-base">
+          Clifside Park, NJ #4440 - Staff
+        </p>
+      </div>
+      <ul class="space-y-2 mt-10">
+        <li class="border-l-[3px] border-main">
+          <button type="button"
+            class="flex items-center w-full p-2 text-base font-normal transition duration-75 rounded-lg group"
+            aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-main">
+              <path
+                d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z" />
+              <path
+                d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.661a6.729 6.729 0 00.551-1.608 1.5 1.5 0 00.14-2.67v-.645a48.549 48.549 0 013.44 1.668 2.25 2.25 0 002.12 0z" />
+              <path
+                d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z" />
+            </svg>
+
+            <span class="flex-1 ml-3 text-left whitespace-nowrap text-main font-bold font-roboto"
+              sidebar-toggle-item>University</span>
+            <svg sidebar-toggle-item class="w-6 h-6 text-main" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <ul id="dropdown-example" class="hidden py-2 space-y-2">
+            <li>
+              <a href="/"
+                class="flex items-center w-full p-2 text-gray-400 hover:text-main font-bold font-roboto transition duration-75 pl-11 group 0">Dashboard</a>
+            </li>
+            <li>
+              <a href="/tranning-center.html"
+                class="flex items-center w-full p-2 text-gray-400 text-main font-bold font-roboto transition duration-75 pl-11 group 0">Tranning
+                Center</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center w-full p-2 text-gray-400 hover:text-main font-bold font-roboto transition duration-75 pl-11 group 0">Usage
+                Report</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center w-full p-2 text-gray-400 hover:text-main font-bold font-roboto transition duration-75 pl-11 group 0">Report
+                Card</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center w-full p-2 text-gray-400 hover:text-main font-bold font-roboto transition duration-75 pl-11 group 0">Notes</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center w-full p-2 text-gray-400 hover:text-main font-bold font-roboto transition duration-75 pl-11 group 0">Favorites</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <section class="sm:ml-64 md:pt-2 h-screen flex flex-col justify-between">
+    <div class="md:px-10 px-2">
+      <nav class="px-2 sm:px-4 py-2.5">
+        <div class="flex gap-5 items-center justify-between">
+          <div class="items-center">
+            <h2 class="font-bold font-roboto text-gray-400 text-xl md:text-3xl">
+              Welcome back,
+              <span class="font-thin">jhon<strong>!</strong></span>
+            </h2>
+            <p class="font-bold font-roboto text-gray-400 text-sm md:text-base font-normal">
+              Good luck on your courses, we are here if you need us!
+            </p>
+          </div>
+          <div class="flex items-center md:order-2 gap-4">
+            <button type="button"
+              class="flex  text-sm bg-gray-800 rounded-full  focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+              id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
+              data-dropdown-placement="bottom">
+              <img class="w-[5rem] md:w-16 h-16 rounded-full" src="./assets/images/profile.jpeg" alt="user photo" />
+            </button>
+            <div class="hidden md:block">
+              <h4 class="font-bold font-roboto text-gray-400 text-base">
+                Taylar Matoba
+              </h4>
+              <h5 class="font-medium font-roboto text-gray-400 text-base -mt-1">
+                Email: <span>info@gamil.com</span>
+              </h5>
+              <h5 class="font-medium font-roboto text-gray-400 text-base -mt-1">
+                Phone: <span>702-990-6514</span>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="bg-white mt-4 pb-10 mb-10">
+        <div class="p-4 border-b-[1px] border-gray-100 font-bold font-roboto text-blue-500 text-base">
+          <a href="#">
+            Mian Objections
+            <span class="text-gray-400"> Time Objection</span></a>
+          <p class="mt-6 text-gray-500 text-sm font-roboto font-normal">
+            Time Objection
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row  container mx-auto md:items-start pt-8 justify-center gap-6 md:gap-1 items-center  md:justify-between">
+          <div class="w-2/12 flex justify-center">
+            <button class="bg-blue-600 py-2 px-5 text-white font-bold font-roboto rounded-md">
+              Notes
+            </button>
+          </div>
+          <div class="md:w-8/12">
+            <video class="w-full h-auto max-w-full border border-gray-200" controls>
+              <source src="/docs/videos/flowbite.mp4" type="video/mp4" />
+            </video>
+            <div class="grid grid-cols-2 lg:grid-cols-4 mt-10 gap-4 lg:gap-8">
+              <a href="#" class="bg-blue-600 p-2 flex cursor-pointer justify-center flex-col items-center rounded-md">
+                <svg id="Layer_1" style="enable-background:new 0 0 16 16;" fill="#fff" class="w-20 h-20" version="1.1"
+                  viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path
+                    d="M15,6H8V3c0-0.484-0.375-1-1-1C6.539,2,6.305,2.287,6,2.54L0.625,7C0.242,7.313,0,7.555,0,8s0.242,0.688,0.625,1L6,13.46  C6.305,13.713,6.539,14,7,14c0.625,0,1-0.516,1-1v-3h7c0.55,0,1-0.45,1-1V7C16,6.45,15.55,6,15,6z" />
+                </svg>
+                <p class=" font-roboto">
+                  <span class="text-gray-200 text-center">Back to Category</span>
+                </p>
+              </a>
+
+              <a href="/" class="bg-blue-600 p-2 pt-4 flex cursor-pointer justify-center flex-col items-center rounded-md">
+                <svg version="1.1" id="Capa_1" fill="#fff" class="w-16 h-16" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 460.298 460.297"
+                  style="enable-background:new 0 0 460.298 460.297;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path d="M230.149,120.939L65.986,256.274c0,0.191-0.048,0.472-0.144,0.855c-0.094,0.38-0.144,0.656-0.144,0.852v137.041
+                        c0,4.948,1.809,9.236,5.426,12.847c3.616,3.613,7.898,5.431,12.847,5.431h109.63V303.664h73.097v109.64h109.629
+                        c4.948,0,9.236-1.814,12.847-5.435c3.617-3.607,5.432-7.898,5.432-12.847V257.981c0-0.76-0.104-1.334-0.288-1.707L230.149,120.939
+                        z" />
+                       <path d="M457.122,225.438L394.6,173.476V56.989c0-2.663-0.856-4.853-2.574-6.567c-1.704-1.712-3.894-2.568-6.563-2.568h-54.816
+                        c-2.666,0-4.855,0.856-6.57,2.568c-1.711,1.714-2.566,3.905-2.566,6.567v55.673l-69.662-58.245
+                        c-6.084-4.949-13.318-7.423-21.694-7.423c-8.375,0-15.608,2.474-21.698,7.423L3.172,225.438c-1.903,1.52-2.946,3.566-3.14,6.136
+                        c-0.193,2.568,0.472,4.811,1.997,6.713l17.701,21.128c1.525,1.712,3.521,2.759,5.996,3.142c2.285,0.192,4.57-0.476,6.855-1.998
+                        L230.149,95.817l197.57,164.741c1.526,1.328,3.521,1.991,5.996,1.991h0.858c2.471-0.376,4.463-1.43,5.996-3.138l17.703-21.125
+                        c1.522-1.906,2.189-4.145,1.991-6.716C460.068,229.007,459.021,226.961,457.122,225.438z" />
+                    </g>
+                  <g>
+                </svg>
+
+                <p class=" font-roboto mt-2">
+                  <span class="text-gray-200 text-center">Dashboard</span>
+                </p>
+              </a>
+
+              <a href="/" class="bg-blue-600 p-2 pt-4  flex cursor-pointer justify-center flex-col items-center rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" class="w-16 h-16" viewBox="0 0 64 64"><g id="white_board" data-name="white board"><rect x="45" y="32" width="10" height="4"/><rect x="4" y="38" width="56" height="3"/><path d="M4,4V36H43V31a1,1,0,0,1,1-1H56a1,1,0,0,1,1,1v5h3V4ZM8,7h6V9H8Zm24,7H8V12H32Zm0-5H18V7H32Zm14,5H36V12H46Zm10,0H50V12h6Zm0-5H36V7H56Z"/><path d="M18.37,60H10v2h9a.982.982,0,0,0,.9-.57L28.63,43H26.42Z"/><path d="M37.58,43H35.37L44.1,61.43A.982.982,0,0,0,45,62h9V60H45.63Z"/></g></svg>
+                <p class=" font-roboto mt-2 text-center">
+                  <span class="text-gray-200 text-center">Back to Main Options</span>
+                </p>
+              </a>
+
+              <a href="/" class="bg-blue-600 p-2  flex cursor-pointer justify-center flex-col items-center rounded-md">
+                <svg  id="Layer_1" fill="#fff" class="w-20 h-20" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M15.375,7L10,2.54C9.695,2.287,9.461,2,9,2C8.375,2,8,2.516,8,3v3H1C0.45,6,0,6.45,0,7v2c0,0.55,0.45,1,1,1h7v3  c0,0.484,0.375,1,1,1c0.461,0,0.695-0.287,1-0.54L15.375,9C15.758,8.688,16,8.445,16,8S15.758,7.313,15.375,7z"/></svg>
+                <p class=" font-roboto text-center">
+                  <span class="text-gray-200">Quiz</span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="md:w-2/12 flex justify-center">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-16 h-16 text-red-500 ml-7">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+              </svg>
+              <p class="text-gray-400 font-normal font-roboto ">
+                Add to favorites
+              </p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-white p-4 px-6 flex justify-between items-center">
+      <p class="text-gray-400">
+        <strong>Copyright</strong> KPsoftworks ® 2023
+      </p>
+      <p class="text-gray-400">Server: DEN</p>
+    </footer>
+  </section>
+
+  <!-- Flowbite Cdn  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+</body>
+
+</html>

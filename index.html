@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KPSoftwork University</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              main: "#824595",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <button
+      data-drawer-target="sidebar-multi-level-sidebar"
+      data-drawer-toggle="sidebar-multi-level-sidebar"
+      aria-controls="sidebar-multi-level-sidebar"
+      type="button"
+      class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+    >
+      <span class="sr-only">Open sidebar</span>
+      <svg
+        class="w-6 h-6"
+        aria-hidden="true"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+        ></path>
+      </svg>
+    </button>
+
+    <aside
+      id="sidebar-multi-level-sidebar"
+      class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+      aria-label="Sidebar"
+    >
+      <div class="h-full py-4 overflow-y-auto bg-white">
+        <figure class="flex items-center justify-between px-3">
+          <img src="./assets/images/logo.png" alt="logo" class="w-48" />
+          <button
+            data-collapse-toggle="mobile-menu-2"
+            type="button"
+            class="inline-flex items-center mt-3 p-1 ml-1 text-sm text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="mobile-menu-2"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </figure>
+        <div class="flex justify-between flex-col items-center mt-6 px-3">
+          <img src="./assets/images/badge.png" alt="badge" />
+          <h2 class="font-roboto font-bold text-[22px] text-gray-400">
+            Jhon Aris
+          </h2>
+          <p class="text-center font-bold text-gray text-gray-400 text-base">
+            Clifside Park, NJ #4440 - Staff
+          </p>
+        </div>
+        <ul class="space-y-2 mt-10">
+          <li class="border-l-[3px] border-main">
+            <button
+              type="button"
+              class="flex items-center w-full p-2 text-base font-normal transition duration-75 rounded-lg group"
+              aria-controls="dropdown-example"
+              data-collapse-toggle="dropdown-example"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6 text-main"
+              >
+                <path
+                  d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z"
+                />
+                <path
+                  d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.661a6.729 6.729 0 00.551-1.608 1.5 1.5 0 00.14-2.67v-.645a48.549 48.549 0 013.44 1.668 2.25 2.25 0 002.12 0z"
+                />
+                <path
+                  d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z"
+                />
+              </svg>
+
+              <span
+                class="flex-1 ml-3 text-left whitespace-nowrap text-main font-bold font-roboto"
+                sidebar-toggle-item
+                >University</span
+              >
+              <svg
+                sidebar-toggle-item
+                class="w-6 h-6 text-main"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <ul id="dropdown-example" class="hidden py-2 space-y-2">
+              <li>
+                <a
+                  href="/"
+                  class="flex items-center w-full p-2 text-gray-400 text-main font-bold font-roboto transition duration-75 pl-11 group 0"
+                  >Dashboard</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/tranning-center.html"
+                  class="flex items-center w-full p-2 text-gray-400 hover:text-main font-bold font-roboto transition duration-75 pl-11 group 0"
+                  >Tranning Center</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center w-full p-2 text-gray-400 hover:text-main font-bold font-roboto transition duration-75 pl-11 group 0"
+                  >Usage Report</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center w-full p-2 text-gray-400 hover:text-main font-bold font-roboto transition duration-75 pl-11 group 0"
+                  >Report Card</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center w-full p-2 text-gray-400 hover:text-main font-bold font-roboto transition duration-75 pl-11 group 0"
+                  >Notes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center w-full p-2 text-gray-400 hover:text-main font-bold font-roboto transition duration-75 pl-11 group 0"
+                  >Favorites</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <section
+      class="sm:ml-64  md:pt-2 h-screen flex flex-col justify-between"
+    >
+      <div class="md:px-10">
+        <nav class="px-2 sm:px-4 py-2.5">
+          <div class="flex gap-5 items-center justify-between">
+            <div class="items-center">
+              <h2 class="font-bold font-roboto text-gray-400 text-xl md:text-3xl">
+                Welcome back,
+                <span class="font-thin">jhon<strong>!</strong></span>
+              </h2>
+              <p class="font-bold font-roboto text-gray-400 text-sm md:text-base font-normal">
+                Good luck on your courses, we are here if you need us!
+              </p>
+            </div>
+            <div class="flex items-center md:order-2 gap-4">
+              <button type="button"
+                class="flex  text-sm bg-gray-800 rounded-full  focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
+                data-dropdown-placement="bottom">
+                <img class="w-[5rem] md:w-16 h-16 rounded-full" src="./assets/images/profile.jpeg" alt="user photo" />
+              </button>
+              <div class="hidden md:block">
+                <h4 class="font-bold font-roboto text-gray-400 text-base">
+                  Taylar Matoba
+                </h4>
+                <h5 class="font-medium font-roboto text-gray-400 text-base -mt-1">
+                  Email: <span>info@gamil.com</span>
+                </h5>
+                <h5 class="font-medium font-roboto text-gray-400 text-base -mt-1">
+                  Phone: <span>702-990-6514</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container mx-auto bg-white mt-4 pb-10">
+          <div
+            class="p-4 border-b-[1px] border-gray-100 font-bold font-roboto text-blue-500 text-base"
+          >
+            <a href="#">
+              <- Back <span class="text-gray-400">Mian Objections</span></a
+            >
+          </div>
+          <div
+            class="p-2 py-4 lg:p-5 lg:px-10 border-b-[1px] border-gray-100 flex gap-5 justify-between items-center font-roboto text-base"
+          >
+            <div
+              class="flex gap-4 lg:gap-16 items-center text-3xl font-thin text-gray-400"
+            >
+              <img src="./assets/images/book.png" alt="book" />
+              <h2>Main Objection</h2>
+            </div>
+            <div>
+              <p class="text-center text-gray-400">Course Complication</p>
+              <h2 class="text-center text-4xl my-3 font-thin text-gray-400">
+                0%
+              </h2>
+
+              <div class="w-full bg-gray-100">
+                <div
+                  class="bg-blue-600 py-2 text-xs font-medium text-blue-100 text-center leading-none"
+                  style="width: 0%"
+                >
+                  0
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative overflow-x-auto m-4 mx-10">
+            <table class="w-full text-sm text-left text-gray-500">
+              <thead
+                class="text-sm text-gray-400 font-roboto capitalize border-b-[1px] border-gray-100"
+              >
+                <tr>
+                  <th scope="col" class="px-6 py-3">Main Objections</th>
+                  <th scope="col" class="px-6 py-3">Favoriates</th>
+                  <th scope="col" class="px-6 py-3">files</th>
+                  <th scope="col" class="px-6 py-3">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b-[1px] border-gray-100 bg-gray-50">
+                  <th
+                    scope="row"
+                    class="px-6 py-4 text-blue-500 font-roboto font-bold whitespace-nowrap"
+                  >
+                    Apple MacBook Pro 17"
+                  </th>
+                  <td class="px-6 py-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 text-red-500"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </td>
+                  <td class="px-6 py-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                       </svg>
+                       
+                  </td>
+                  <td class="px-6 py-4">
+                    <div class="w-full bg-gray-100">
+                      <div
+                        class="bg-blue-600 py-2 text-xs font-medium text-blue-100 text-center leading-none"
+                        style="width: 0%"
+                      >
+                        0
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-b-[1px] border-gray-100 bg-white">
+                  <th
+                    scope="row"
+                    class="px-6 py-4 text-blue-500 font-roboto font-bold whitespace-nowrap"
+                  >
+                    Apple MacBook Pro 17"
+                  </th>
+                  <td class="px-6 py-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 text-red-500"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </td>
+                  <td class="px-6 py-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                       </svg>
+                       
+                  </td>
+                  <td class="px-6 py-4">
+                    <div class="w-full bg-gray-100">
+                      <div
+                        class="bg-blue-600 py-2 text-xs font-medium text-blue-100 text-center leading-none"
+                        style="width: 0%"
+                      >
+                        0
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                 <tr class="border-b-[1px] border-gray-100 bg-gray-50">
+                  <th
+                    scope="row"
+                    class="px-6 py-4 text-blue-500 font-roboto font-bold whitespace-nowrap"
+                  >
+                    Apple MacBook Pro 17"
+                  </th>
+                  <td class="px-6 py-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 text-red-500"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </td>
+                  <td class="px-6 py-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                       </svg>
+                       
+                  </td>
+                  <td class="px-6 py-4">
+                    <div class="w-full bg-gray-100">
+                      <div
+                        class="bg-blue-600 py-2 text-xs font-medium text-blue-100 text-center leading-none"
+                        style="width: 0%"
+                      >
+                        0
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <footer class="bg-white p-4 px-6 flex justify-between items-center">
+          <p class="text-gray-400"><Strong>Copyright</Strong> KPsoftworks ® 2023</p>
+          <p class="text-gray-400">Server: DEN</p>
+      </footer>
+    </section>
+
+    <!-- Flowbite Cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  </body>
+</html>
