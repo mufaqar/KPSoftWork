@@ -1,3 +1,12 @@
 2023-03-17 23:26:30 info: tempDirectory:c:\Users\acer\.vscode\extensions\embold-vscode.embold-0.1.4\temp
 2023-03-17 23:26:30 info: Extraction complete for source: c:\Users\acer\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\acer\.vscode\extensions\embold-vscode.embold-0.1.4\temp
 2023-03-17 23:26:30 info: Congratulations, your extension "Embold" is now active!
+2023-03-17 23:27:04 info: file:///f%3A/upwork/pksoftwork/.git/index.lock
+2023-03-17 23:27:04 error: SQLITE_ERROR: no such table: issues
+2023-03-17 23:27:09 info: file:///f%3A/upwork/pksoftwork/.git/index.lock
+2023-03-17 23:27:09 error: SQLITE_ERROR: no such table: issues
+2023-03-17 23:27:32 info: file:///f%3A/upwork/pksoftwork/.git/refs/remotes/origin/main.lock
+2023-03-17 23:27:32 error: SQLITE_ERROR: no such table: issues
+2023-03-18 12:59:45 info: tempDirectory:c:\Users\acer\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2023-03-18 12:59:45 info: Extraction complete for source: c:\Users\acer\.vscode\extensions\embold-vscode.embold-0.1.4\resources\embold-scanner-archive.zip, destination: c:\Users\acer\.vscode\extensions\embold-vscode.embold-0.1.4\temp
+2023-03-18 12:59:45 info: Congratulations, your extension "Embold" is now active!
