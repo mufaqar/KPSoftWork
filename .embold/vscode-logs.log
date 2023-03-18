@@ -21,3 +21,5 @@
 2023-03-18 17:24:25 error: SQLITE_ERROR: no such table: issues
 2023-03-18 17:25:24 info: file:///f%3A/upwork/pksoftwork/.git/index.lock
 2023-03-18 17:25:24 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:25:28 info: file:///f%3A/upwork/pksoftwork/.git/index.lock
+2023-03-18 17:25:28 error: SQLITE_ERROR: no such table: issues
