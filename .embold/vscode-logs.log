@@ -15,3 +15,9 @@
 2023-03-18 17:23:56 info: Congratulations, your extension "Embold" is now active!
 2023-03-18 17:24:12 info: file:///f%3A/upwork/pksoftwork/.git/index.lock
 2023-03-18 17:24:12 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:24:21 info: file:///f%3A/upwork/pksoftwork/.git/index.lock
+2023-03-18 17:24:21 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:24:25 info: file:///f%3A/upwork/pksoftwork/.git/refs/remotes/origin/main.lock
+2023-03-18 17:24:25 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:25:24 info: file:///f%3A/upwork/pksoftwork/.git/index.lock
+2023-03-18 17:25:24 error: SQLITE_ERROR: no such table: issues
